@@ -4,6 +4,7 @@ import { useLanguage } from '../hooks/useLanguage';
 import type { Language } from '../contexts/LanguageContext';
 import type { Page } from '../App';
 
+
 const SunIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
@@ -29,22 +30,7 @@ const CloseIcon = () => (
 );
 
 const BarberLogo = ({ className = '' }: { className?: string }) => (
-    <svg 
-        className={className} 
-        viewBox="0 0 24 24" 
-        fill="none" 
-        stroke="currentColor" 
-        strokeWidth="1.5" 
-        strokeLinecap="round" 
-        strokeLinejoin="round" 
-        xmlns="http://www.w3.org/2000/svg"
-    >
-        <circle cx="6" cy="6" r="3"></circle>
-        <circle cx="6" cy="18" r="3"></circle>
-        <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
-        <line x1="14.47" y1="14.48" x2="20" y2="20"></line>
-        <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
-    </svg>
+    <img src='/assets/logo.jpg' alt="Company logo" className="w-32 h-auto" />
 );
 
 interface NavbarProps {

@@ -19,11 +19,12 @@ export const initialSiteData = {
       title: "Services",
       subtitle: "Listening & Precision",
       cta: "Make an appointment",
-      items: [
-        { icon: 'scissors', imageUrl: 'https://images.unsplash.com/photo-1599351432095-d8a65191a613?q=80&w=1974&auto=format&fit=crop', en: { name: "Haircut", description: "Clipper or scissor cut for men, women, and children." }, ar: { name: "قصة شعر", description: "قصة بالماكينة أو المقص للرجال والنساء والأطفال." }, fr: { name: "Coiffure", description: "Coupe tondeuse ou ciseaux pour homme, femmes et enfants." } },
-        { icon: 'razor', imageUrl: 'https://images.unsplash.com/photo-1622288432453-24161a04e04e?q=80&w=2070&auto=format&fit=crop', en: { name: "Shave", description: "Full shave or traditional head shave." }, ar: { name: "حلاقة", description: "حلاقة كاملة أو حلاقة رأس تقليدية." }, fr: { name: "Rasage", description: "Rasage complet ou rasage crânien traditionnel." } },
+      items: [  
+        
+        { icon: 'scissors', imageUrl: '/assets/scissors.webp', en: { name: "Haircut", description: "Clipper or scissor cut for men, women, and children." }, ar: { name: "قصة شعر", description: "قصة بالماكينة أو المقص للرجال والنساء والأطفال." }, fr: { name: "Coiffure", description: "Coupe tondeuse ou ciseaux pour homme, femmes et enfants." } },
+        { icon: 'razor', imageUrl: '/assets/razor.webp', en: { name: "Shave", description: "Full shave or traditional head shave." }, ar: { name: "حلاقة", description: "حلاقة كاملة أو حلاقة رأس تقليدية." }, fr: { name: "Rasage", description: "Rasage complet ou rasage crânien traditionnel." } },
         { icon: 'beard', imageUrl: 'https://images.unsplash.com/photo-1621607512214-68297480165e?q=80&w=2070&auto=format&fit=crop', en: { name: "Beard", description: "Clipper fade, beard outline, or sculpted beard." }, ar: { name: "لحية", description: "تدرج بالماكينة، تحديد اللحية، أو لحية منحوتة." }, fr: { name: "Barbe", description: "Dégradé barbe à la tondeuse, contour de barbe ou barbe sculptée taillée." } },
-        { icon: 'moustache', imageUrl: 'https://images.unsplash.com/photo-1536520002442-99b64a03e29d?q=80&w=2070&auto=format&fit=crop', en: { name: "Moustache", description: "Cut and sculpture." }, ar: { name: "شارب", description: "قص ونحت." }, fr: { name: "Moustache", description: "Coupe et sculpture." } },
+        { icon: 'moustache', imageUrl: '/assets/moustache.webp', en: { name: "Moustache", description: "Cut and sculpture." }, ar: { name: "شارب", description: "قص ونحت." }, fr: { name: "Moustache", description: "Coupe et sculpture." } },
       ],
     },
     gallery: {
@@ -71,7 +72,7 @@ export const initialSiteData = {
     },
     footer: {
       description: "Crafting style and confidence since 2023.",
-      copyright: "© 2024 The Modern Barber. All Rights Reserved.",
+      copyright: "© 2025 Perfecto Coiffe. All Rights Reserved.",
     },
     booking: {
         title: "Book Your Appointment",
@@ -108,7 +109,7 @@ export const initialSiteData = {
   },
   heroImage: 'https://images.unsplash.com/photo-1599351548093-e35000033f7d?q=80&w=2070&auto=format&fit=crop',
   galleryImages: [
-    'https://images.unsplash.com/photo-1567894340345-a6162c4377db?q=80&w=2070&auto=format&fit=crop',
+    '/assets/logo.jpg',
     'https://images.unsplash.com/photo-1621983449332-03d331405b63?q=80&w=1964&auto=format&fit=crop',
     'https://images.unsplash.com/photo-1585749429512-075a3c03565f?q=80&w=2070&auto=format&fit=crop',
     'https://images.unsplash.com/photo-1621983449292-8070a6c0de6b?q=80&w=1964&auto=format&fit=crop',

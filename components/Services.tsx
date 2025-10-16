@@ -38,6 +38,7 @@ const Services: React.FC<ServicesProps> = ({ navigate }) => {
     const { t, language } = useLanguage();
     const serviceItems = t('services.items');
     const [currentIndex, setCurrentIndex] = useState(0);
+    
 
     const nextSlide = () => setCurrentIndex(prev => (prev + 1) % serviceItems.length);
     const prevSlide = () => setCurrentIndex(prev => (prev - 1 + serviceItems.length) % serviceItems.length);
@@ -80,14 +81,10 @@ const Services: React.FC<ServicesProps> = ({ navigate }) => {
                     {/* Right Column: Image Slider */}
                     <div className="relative w-full h-[70vh] overflow-hidden">
                          <div className="flex transition-transform duration-700 ease-in-out h-full" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-                            {serviceItems.map((service: any, index: number) => (
-                                <img 
-                                    key={index}
-                                    src={service.imageUrl}
-                                    alt={service[language as Language].name}
-                                    className="w-full h-full object-cover flex-shrink-0"
-                                />
-                            ))}
+                            <img src="/assets/service1.jpg" alt="Service 1" className="w-full h-full object-cover flex-shrink-0" />
+                            <img src="/assets/service2.jpg" alt="Service 2" className="w-full h-full object-cover flex-shrink-0" />
+                            <img src="/assets/service3.jpg" alt="Service 3" className="w-full h-full object-cover flex-shrink-0" />
+                            <img src="/assets/service4.jpg" alt="Service 4" className="w-full h-full object-cover flex-shrink-0" />
                         </div>
                         <button onClick={prevSlide} className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/75 transition-colors" aria-label="Previous image"><ChevronLeft /></button>
                         <button onClick={nextSlide} className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/75 transition-colors" aria-label="Next image"><ChevronRight /></button>

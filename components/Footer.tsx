@@ -52,7 +52,7 @@ const Footer: React.FC<FooterProps> = ({navigate}) => {
 
                 <div className="my-8 h-80 rounded-lg overflow-hidden shadow-2xl border-2 border-brand-gold">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204505.4249110486!2d2.910385311656911!3d36.75979213193855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fb21da3929e33%3A0x4c2323a77d337424!2sAlgiers!5e0!3m2!1sen!2sdz!4v1689252512345!5m2!1sen!2sdz"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.26166813341!2d3.031304275524715!3d36.74028977107498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fadd2a0b64eef%3A0x3a2d6ba8a196c123!2sPERFECTO%20COIFFE!5e0!3m2!1sfr!2sdz!4v1760623967845!5m2!1sfr!2sdz"
                         width="100%"
                         height="100%"
                         style={{ border: 0 }}

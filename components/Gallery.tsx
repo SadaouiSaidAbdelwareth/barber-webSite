@@ -45,14 +45,11 @@ const Gallery: React.FC = () => {
                 <SectionTitle>{t('gallery.title')}</SectionTitle>
                 <div className="relative w-full max-w-4xl mx-auto h-[60vh] overflow-hidden rounded-lg shadow-2xl">
                     <div className="flex transition-transform duration-700 ease-in-out h-full" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-                        {images.map((src, index) => (
-                            <img 
-                                key={index} 
-                                src={src} 
-                                alt={`Gallery image ${index + 1}`} 
-                                className="w-full h-full object-cover flex-shrink-0"
-                            />
-                        ))}
+                     <img src="/assets/img1.jpg" alt="img 1" className="w-full h-full object-cover flex-shrink-0" />
+                     <img src="/assets/img2.jpg" alt="img 1" className="w-full h-full object-cover flex-shrink-0" />
+                     <img src="/assets/img3.jpg" alt="img 1" className="w-full h-full object-cover flex-shrink-0" />
+                     <img src="/assets/img4.jpg" alt="img 1" className="w-full h-full object-cover flex-shrink-0" />
+
                     </div>
                     
                     <button onClick={prevSlide} className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/75 transition-colors" aria-label="Previous image">

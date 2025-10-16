@@ -11,7 +11,7 @@ interface Product {
 const ProductCard: React.FC<{ product: Product, language: Language, ctaText: string }> = ({ product, language, ctaText }) => (
     <div className="group text-center">
         <div className="relative bg-gray-100 dark:bg-dark-card p-4 overflow-hidden">
-            <img src={product.imageUrl} alt={product[language].name} className="w-full h-64 object-contain transition-transform duration-500 group-hover:scale-110" />
+            <img src={product.imageUrl} alt={product[language].name} className="w-full h-64 object-contain transition-transform duration-500 group-hover:scale-110 rounded-full" />
         </div>
         <div className="p-4 bg-white dark:bg-black">
              <button className="w-full bg-transparent text-gray-800 dark:text-white font-bold py-3 px-6 border border-gray-800 dark:border-white hover:bg-gray-800 dark:hover:bg-white hover:text-white dark:hover:text-black transition-all duration-300">
@@ -39,9 +39,18 @@ const Boutique: React.FC = () => {
                     </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {boutiqueItems.map((product, index) => (
-                        <ProductCard key={index} product={product} language={language as Language} ctaText={t('boutique.cta')} />
-                    ))}
+                    {boutiqueItems.map((product, index) => {
+                        const imagePath = `/assets/p${(index % 4) + 1}.jpg`;
+                        const productWithLocalImage = { ...product, imageUrl: imagePath };
+                        return (
+                            <ProductCard
+                                key={index}
+                                product={productWithLocalImage}
+                                language={language as Language}
+                                ctaText={t('boutique.cta')}
+                            />
+                        );
+                    })}
                 </div>
             </div>
         </section>
