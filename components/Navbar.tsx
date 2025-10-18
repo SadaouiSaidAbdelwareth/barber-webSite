@@ -30,7 +30,7 @@ const CloseIcon = () => (
 );
 
 const BarberLogo = ({ className = '' }: { className?: string }) => (
-    <img src='/assets/logo.jpg' alt="Company logo" className="w-32 h-auto" />
+    <img src='/assets/logo.png' alt="Company logo" className="w-32 h-auto" />
 );
 
 interface NavbarProps {
@@ -91,18 +91,19 @@ const Navbar: React.FC<NavbarProps> = ({ navigate, currentPage }) => {
           {/* Mobile: Brand Name on the left */}
           <div className="md:hidden">
             <button onClick={() => navigate('home')} className="text-2xl font-serif font-bold text-brand-gold tracking-wider">
-              {t('brand')}
+              PEFECTO COIFFE
             </button>
           </div>
 
           {/* Centered Logo */}
-          <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <div className=" md:flex hidden  absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <button 
                 onClick={() => navigate('home')} 
-                className={`hidden md:block p-2 bg-white dark:bg-dark-bg rounded-full shadow-lg border-4 border-brand-gold hover:scale-105 transition-all duration-300 ${isScrolled ? 'w-16 h-16' : 'w-24 h-24'}`}
                 aria-label="Home"
+                className='text-2xl font-serif font-bold text-brand-gold tracking-wider'
             >
-                <BarberLogo className="w-full h-full text-brand-gold" />
+              PEFECTO COIFFE
+               
             </button>
           </div>
           

@@ -1,6 +1,6 @@
 export const initialSiteData = {
   en: {
-    brand: "The Modern Barber",
+    brand: "Perfecto Coiffe",
     nav: {
       home: "Home",
       services: "Services",
